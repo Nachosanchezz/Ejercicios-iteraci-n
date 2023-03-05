@@ -5,4 +5,8 @@ def raiz_cuadrada_entera(n):
         return 1
     
     r = n // 2
-    
+    while r**2 > n:
+        r = (r + n // r) // 2
+    return r
+
+
